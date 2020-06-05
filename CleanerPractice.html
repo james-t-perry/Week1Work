@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaners</title>
+    <style>
+        .open{
+            background-color: green;
+        }
+        .closed{background-color: red;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .table{
+            margin: auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="text-center">Hours of Operation</h2>
+    <table class="table text-center">
+        <tr>
+            <td></td>
+            <th>Sunday</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+            <th>Thursday</th>
+            <th>Friday</th>
+            <th>Saturday</th>
+        </tr>
+        <tr>
+            <th>Morning</th>
+            <td class="closed text-center" rowspan="3">Closed</td>
+            <td class="open text-center" rowspan="3" colspan="5">Open</td>
+            <td class="closed text-center" rowspan="3">Closed</td>
+        </tr>
+        <tr>
+            <th>Afternoon</th>
+        </tr>
+        <tr>
+            <th>Evening</th>
+        </tr>
+    </table>
+    <form>
+        <fieldset>
+            <legend>Contact Info</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="First Name">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+        </fieldset>
+        <fieldset>
+            <legend>Contact Time</legend>
+            <input type="radio" id="time1" name="time" checked="checked" value="morning">
+            <label for="time1">Morning</label>
+            <input type="radio" id="time2" name="time" value="afternoon">
+            <label for="time1">Afternoon</label>
+            <input type="radio" id="time3" name="time" value="evening">
+            <label for="time1">Evening</label>
+            <br>
+            <label for="day">Contact Day</label>
+            <select id="day">
+                <option value="monday">Monday</option>
+                <option value="tuesday">Tuesday</option>
+                <option value="wednesday">Wednesday</option>
+                <option value="thursday">Thursday</option>
+                <option value="friday">Friday</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Services</legend>
+            <input type="checkbox" id="service1" name="services" value="windows">
+            <label for="service1">Windows</label>
+
+            <input type="checkbox" id="service2" name="services" value="floors">
+            <label for="service2">Floors</label>
+
+            <input type="checkbox" id="service3" name="services" value="blinds">
+            <label for="service3">Blinds</label>
+        </fieldset>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,110 @@
+    header{
+        height: 100px;
+        background-color: rgb(117, 117, 117);
+        /* line-height: 100px; */
+        /* margin: 0px !important;
+        padding: 0px !important; */
+        /* border-bottom: 2px solid white; */
+    }
+    .title {
+        font-size: 40px;
+        text-align: right;
+        padding-right: 40px;
+        color: white;
+        text-shadow: 2px 2px black;
+        align-self: center;
+    }
+    .img-header {
+        max-height: 100px;
+        /* border-radius: 100%; */
+        /* margin: 5px 20px; */
+    }
+
+    .active-link {
+        background-color: rgb(117, 117, 117);
+        color: white;
+    }
+    .content {
+        min-height: 200px;
+        margin: 20px;
+        padding: 10px;
+    }
+    .fb-200 {
+        flex-basis: 200px;
+    }
+    .fb-full-200 {
+        flex-basis: calc(100% - 200px);
+        padding: 0px 10px;
+    }
+    /* .lists {
+        list-style-type: none;
+    } */
+    .lists li::before {
+        content: "\1F41F   "
+    }
+    nav {
+        border: 1px solid white;
+    }
+    footer {
+        height: 100px;
+        line-height: 100px;
+        border: 1px solid black;
+        text-shadow: 1px 1px white;
+        font-size: 40px;
+        text-align: center;
+        margin: 5px;
+    }
+    .footer-img{
+        background-image: url("http://www.kingsailfishmounts.com/31_inch_Coho_Salmon_(spawning)-mount-p-2310.jpg");
+        height: 100px;
+        background-repeat: repeat;
+        background-size: contain;
+        opacity: 0.5;
+    }
+    @media (max-width: 930px){
+        .fb-full-200{
+            flex-basis: 100%;
+        }
+        .fb-200{
+            flex-basis: 100%;
+        }
+    }
+    @media (max-width: 750px){
+        .title{
+            font-size: 20px;
+            padding-right: 30px
+        }
+        .content{
+            justify-self: center;
+        }
+        header{
+            height: 50px;
+        }
+        .img-header{
+            max-height: 50px;
+        }
+        footer{
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+        }
+        .footer-img{
+            height: 50px;
+        }
+    }
+    @media (max-width: 450px){
+        .title{
+            font-size: 16px;
+        }
+        footer{
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 400){
+        .title{
+            font-size: 10px;
+        }
+        footer{
+            font-size: 10px;
+        }
+    }

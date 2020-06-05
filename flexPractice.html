@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: white;
+            text-align: center;
+        }
+        header, footer{
+            background-color: black;
+            height: 55px;
+            font-size: 20px;
+            line-height: 55px;
+        }
+        .bg-black {
+            background-color: black;
+        }
+        .bg-blue {
+            background-color: blue;
+        }
+        .bg-red {
+            background-color: red;
+        }
+        .flex-row{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .flex-col{
+            display: flex;
+            flex-flow: column wrap;
+        }
+        .content {
+            border: 1px solid black;
+            margin: 2px 2px;
+            padding: 2px;
+            min-height: 100px;
+        }
+        .order2nd {
+            order: 1;
+        }
+        .order3rd {
+            order: 2;
+        }
+        .order4th {
+            order: 3;
+        }
+        .fb-third {
+            flex-basis: calc(100% / 3 - 10px);
+        }
+        .fb-twoThirds {
+            flex-basis: calc((100% / 3) * 2)
+        }
+        .fb-full {
+            flex-basis: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>HEADER</header>
+    <div class='flex-row'>
+        <div class="flex-row fb-twoThirds">
+            <div class='content fb-third bg-blue'>1</div>
+            <div class='content fb-third bg-blue order2nd'>2</div>
+            <div class='content fb-third bg-blue order4th'>3</div>
+            <div class='content fb-third bg-blue order3rd'>4</div>
+            <div class='content fb-third bg-blue order2nd'>5</div>
+            <div class='content fb-third bg-blue'>6</div>
+        </div>
+        <div class='flex-col fb-third'>
+            <div class="content bg-red order2nd">1</div>
+            <div class="content bg-red">2</div>
+            <div class="content bg-red">3</div>
+
+        </div>
+    </div>
+    <footer>Footer</footer>
+
+</body>
+
+
+</html>

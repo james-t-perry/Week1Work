@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classwork Day 1</title>
+</head>
+<body>
+    <article>
+        <p class="center">James' Weekly Schedule</p>
+        <table>
+            <caption>James' Weekly Schedule</caption>
+            <tr>
+                <td></td>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+            <tr>
+                <th rowspan="2">Morning</th>
+                <td style="background-color: rgba(128, 27, 27, 0.932)" colspan="7">Coffee</td>
+            </tr>
+            <tr>
+                <td style="background-color:cyan" colspan=5>Drive to Class</td>
+                <td style="background-color: darkgray;" colspan="2">Lounge at home</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Afternoon</th>
+                <td colspan="5">Lunch</td>
+                <td style="background-color: yellow;" colspan="2">Lunch with Beers</td>
+            </tr>
+            <tr>
+                <td style="background-color: cyan;" colspan="5">Learn things in Class</td>
+                <td style="background-color: green;" colspan="2">Yard work or Golfing</td>
+            </tr>
+            <tr>
+                    <th rowspan="2">Evening</th>
+                    <td style="background-color: grey;" colspan="7">Dinner</td>
+                    <td></td>
+            </tr>
+            
+        </table>
+    </article>
+    <article>
+        <p>Let us help you with your lawn!</p>
+        <form id="CustomerInfo">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+                <label for="address">Address:</label>
+                <input type="text" id="address">
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Services Requested</legend>
+                <input type="checkbox" id="lawnChoice1" name="service" value="Mowing">
+                <label for="lawnChoice1">Mowing</label>
+
+                <input type="checkbox" id="lawnChoice2" name="service" value="Trimming">
+                <label for="lawnChoice2">Trimming</label>
+                <input type="checkbox" id="lawnChoice3" name="service" value="cleanup">
+                <label for="lawnChoice3">Raking/Cleanup</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Time of Day</legend>
+                <input type="radio" name="Time" id="timeChoice1" value="morning">
+                <label for="timeChoice1">Morning</label>
+
+                <input type="radio" name="time" id="timeChoice2" value="afternoon" checked="checked">
+                <label for="timeChoice2">Afternoon</label>
+
+                <input type="radio" name="time" id="timeChoice3" value="evening">
+                <label for="timeChoice3">Evening</label>
+
+
+            </fieldset>
+
+        
+
+        </form>
+    </article>
+</body>
+</html>
